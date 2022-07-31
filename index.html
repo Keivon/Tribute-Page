@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Template</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .row1{
+                display: table;
+                clear: both;
+                width: 33vw
+            }
+            .row2{
+                display: table;
+                clear: both;
+                width: 33vw
+            }
+            .row3{
+                display: table;
+                clear: both;
+                width: 33vw
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                border: solid;
+            }
+            footer {
+                border-top: solid;
+            }
+            canvas {
+                float: right;
+            }
+            header {
+                display: flex;
+            }
+        </style>
+    </head>
+    <header>
+       
+            <div class="row1" ></div>
+            <div class="row2">
+                <h1>Bitcoin</h1>
+            </div>
+            <div class="row3" >
+                <canvas
+                    id="canvas"
+                    width="100"
+                    height="100"
+                    style="background-color: #333"
+                >
+                </canvas>
+            </div>
+    
+    </header>
+    <body>
+       
+        <img src="./images/bitcoin.jpg" alt="bitcoin" />
+
+        <section>
+            <article>
+                <h2>What is Bitcoin and who made it?</h2>
+                <p>
+                    Bitcoin is a cryptocurrency, a virtual currency designed to
+                    act as money and a form of payment outside the control of
+                    any one person, group, or entity, and thus removing the need
+                    for third-party involvement in financial transactions. It is
+                    rewarded to blockchain miners for the work done to verify
+                    transactions and can be purchased on several exchanges.
+                </p>
+                <p>
+                    Bitcoin was introduced to the public in 2009 by an anonymous
+                    developer or group of developers using the name Satoshi
+                    Nakamoto.
+                </p>
+                <p>
+                    It has since become the most well-known cryptocurrency in
+                    the world. Its popularity has inspired the development of
+                    many other cryptocurrencies. These competitors either
+                    attempt to replace it as a payment system or are used as
+                    utility or security tokens in other blockchains and emerging
+                    financial technologies.
+                </p>
+                <p>Here's a list of other coins to look out for:</p>
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Ethereum"
+                            >Ethereum</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Dogecoin"
+                            >Dogecoin</a
+                        >
+                    </li>
+                    <li><a href="https://en.wikipedia.org/wiki/XRP">XRP</a></li>
+                </ul>
+            </article>
+        </section>
+    </body>
+    <footer>
+        <p style="font-size: 23px">
+            <strong
+                >For more information, please visit<br /><a
+                    href="https://en.wikipedia.org/wiki/Bitcoin"
+                    >Bitcoin on Wikipedia</a
+                ></strong
+            >
+        </p>
+    </footer>
+    <script type="module">
+        import { main } from './clock.js';
+        main();
+    </script>
+</html>
